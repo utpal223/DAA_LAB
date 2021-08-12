@@ -26,7 +26,10 @@ int quicksort(int arr[], int low, int high)
   }
   quicksort(arr, low, mid);
   quicksort(arr, mid + 1, high);
+  return 0;
 }
+
+
 int main()
 {
   int t;
@@ -38,6 +41,7 @@ int main()
     cin >> arr[i];
   quicksort(arr, 0, t - 1);
   for (int i = 0; i < t; i++)
-    cout << arr[i] << endl;
+    cout << arr[i] << " ";
+  cout<<endl;
   return 0;
 }
